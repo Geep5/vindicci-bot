@@ -19,7 +19,7 @@ LOOP_SECONDS = 310  # 5 min + 10s buffer
 
 
 def log(msg):
-    ts = datetime.now(timezone.utc).strftime("%H:%M:%S")
+    ts = datetime.now().strftime("%H:%M:%S")
     print(f"[{ts}] {msg}", flush=True)
 
 
